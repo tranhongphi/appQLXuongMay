@@ -35,10 +35,12 @@ export default class Home extends Component {
             <Icon name="arrow-back" style={{color: 'white'}} />
           </Left>
           <Body style={{justifyContent:'center', alignItems: 'center',}}>
-            <Text>Người dùng</Text>
+            <Text>Người dùng 1</Text>
+
+
           </Body>
           <Right>
-            
+
           </Right>
         </Header>
         <Content>
