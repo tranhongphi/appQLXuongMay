@@ -46,5 +46,14 @@ export default {
   badge:{
     color:'grey',
     padding:25
+  },
+  textlisthh:{
+    color:'grey',
+    marginLeft:10,
+    fontSize:20,
+  },
+  viewhang:{
+    flexDirection:'row',
+    justifyContent:'space-between'
   }
 };

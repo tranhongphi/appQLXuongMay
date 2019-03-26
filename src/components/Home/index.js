@@ -15,30 +15,31 @@ export default class Home extends Component {
       kt: 1
     }
   }
-  componentDidMount() {
-    StatusBar.setBackgroundColor('#0288D1', true);
-  }
   render() {
     const { kt } = this.state;
     return (
       <Container style={styles.container}>
-        <Header searchBar rounded style={{ backgroundColor: '#0288D1' }} >
-          <View style={{ flex: 1, justifyContent: 'center', flexDirection: 'row', alignItems: 'center' }}>
-            <Left style={{ flex: 1 }}>
-              <Icon name="person" style={{ color: 'white' }} />
-            </Left>
-            <Body style={{ flex: 7 }}>
-              <Item style={{ width: '100%', height: 35, backgroundColor: 'white', borderRadius: 30, justifyContent: 'center', alignItems: 'center' }}>
-                <Icon name="search" style={{ padding: 10,opacity:.3 }} />
-                <Input placeholder="Search" placeholderTextColor='gray' />
-              </Item>
-            </Body>
-            <Right style={{ flex: 1 }}>
-              <Icon name="notifications" style={{ color: 'white' }} />
-            </Right>
-          </View>
-        </Header>
-        {kt === 1 ?
+        {StatusBar.setBackgroundColor('#0288D1', true)}
+        {kt !== 1 ?
+          <Header searchBar rounded style={{ backgroundColor: '#0288D1'}} >
+            <View style={{ flex: 1, justifyContent: 'center', flexDirection: 'row', alignItems: 'center' }}>
+              <Left style={{ flex: 1 }}>
+                <Icon name="person" style={{ color: 'white' }} />
+              </Left>
+              <Body style={{ flex: 7 }}>
+                <Item style={{ width: '100%', height: 35, backgroundColor: 'white', borderRadius: 30, justifyContent: 'center', alignItems: 'center' }}>
+                  <Icon name="search" style={{ padding: 10, opacity: .3 }} />
+                  <Input placeholder="Search" placeholderTextColor='gray' />
+                </Item>
+              </Body>
+              <Right style={{ flex: 1 }}>
+                <Icon name="notifications" style={{ color: 'white' }} />
+              </Right>
+            </View>
+          </Header>
+          : null
+        }
+        {/* {kt === 1 ?
           <Bangthongke />
           : null
         }
@@ -49,7 +50,8 @@ export default class Home extends Component {
         {kt === 3 ?
           <Hanghoa />
           : null
-        }
+        } */}
+        <Hangxuat/>
         <Footer style={{ borderTopWidth: 0.5, borderBottomColor: 'gray' }}>
           <FooterTab style={{ backgroundColor: 'white' }}>
 
@@ -62,7 +64,7 @@ export default class Home extends Component {
               <Text style={[styles.textfoot, this.state.kt === 1 ? { color: '#0288D1' } : { color: 'gray' }]} >Trang chủ</Text>
             </Button>
             <Button vertical style={[this.state.kt === 3 ? { color: '#0288D1', backgroundColor: 'white' } : { color: 'gray' }]} onPress={() => { this.setState({ kt: 3 }) }} active={this.state.kt !== 3 ? false : true}>
-              <Icon name="navigate" style={[styles.textfoot, this.state.kt === 3 ? { color: '#0288D1' } : { color: 'gray' }]}/>
+              <Icon name="navigate" style={[styles.textfoot, this.state.kt === 3 ? { color: '#0288D1' } : { color: 'gray' }]} />
               <Text style={[styles.textfoot, this.state.kt === 3 ? { color: '#0288D1' } : { color: 'gray' }]}>Hàng hóa</Text>
             </Button>
           </FooterTab>

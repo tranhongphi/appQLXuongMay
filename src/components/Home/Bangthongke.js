@@ -15,6 +15,9 @@ export default class Bangthongke extends Component {
   render() {
     return (
       <Content style={{ backgroundColor: '#FAFAFA' }}>
+        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: '#0288D1' }}>
+          <Text style={{ fontSize: 40, color: 'white' }}>Trang chủ</Text>
+        </View>
         <ScrollView style={{ height: 150, elevation: 5, outlineProvider: 'bounds', backgroundColor: '#0288D1' }} horizontal={true} pagingEnabled={true} showsHorizontalScrollIndicator={false} >
           <View style={styles.viewscroll}>
             <View style={{ justifyContent: 'center', alignItems: 'center', }}>
