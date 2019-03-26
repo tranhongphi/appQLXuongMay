@@ -58,14 +58,13 @@ export default class Home extends Component {
               <Icon name="navigate" style={styles.textfoot} />
               <Text style={styles.textfoot}>Hàng hóa</Text>
             </Button>
-            <Button vertical onPress={() => { this.setState({ kt: 4 }) }} active={this.state.kt !== 4 ? false : true}>
+            <Button vertical onPress={() => { this.setState({ kt: 4 }) }}  active={this.state.kt !== 4 ? false : true}>
               <Icon name="person" style={styles.textfoot} />
               <Text style={styles.textfoot}>Thông tin</Text>
             </Button>
           </FooterTab>
         </Footer>
       </Container>
-    //  <Bangthongke></Bangthongke> 
     );
   }
 }
