@@ -60,27 +60,18 @@ export default class Bangthongke extends Component {
         <ScrollView >
           <TouchableOpacity activeOpacity={.9} style={[styles.viewcon, { marginTop: 25 }]}>
             <Text style={styles.textcon}>Sản Phẩm mới</Text>
-            <Badge style={{ backgroundColor: '#0288D1' }}>
-              <Text>2</Text>
-            </Badge>
+            <Text style={styles.badge}>3</Text>
           </TouchableOpacity>
           <TouchableOpacity activeOpacity={.9} style={styles.viewcon}>
             <Text style={styles.textcon}>Nhân viên mới</Text>
-            <Badge style={{ backgroundColor: '#0288D1' }}>
-              <Text>2</Text>
-            </Badge>
+            <Text style={styles.badge}>3</Text>
           </TouchableOpacity>
           <TouchableOpacity activeOpacity={.9} style={styles.viewcon}>
             <Text style={styles.textcon}>Sản phẩm bán chạy</Text>
-            <Badge style={{ backgroundColor: '#0288D1' }}>
-              <Text>100</Text>
-            </Badge>
           </TouchableOpacity>
           <TouchableOpacity activeOpacity={.9} style={styles.viewcon}>
             <Text style={styles.textcon}>Nhân viên thu nhập cao</Text>
-            <Badge style={{ backgroundColor: '#0288D1' }}>
-              <Text>2</Text>
-            </Badge>
+            <Text style={styles.badge}>3</Text>
           </TouchableOpacity>
         </ScrollView>
       </Content>

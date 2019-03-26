@@ -35,12 +35,16 @@ export default {
     justifyContent:'space-between',
     alignItems:'center'
   },
-textcon: {
-  fontSize: 25,
+  textcon: {
+    fontSize: 25,
     padding: 25,
-},
-textfoot:{
-  color:'black'
-}
-
+    color:'grey'
+  },
+  textfoot:{
+    color:'gray'
+  },
+  badge:{
+    color:'grey',
+    padding:25
+  }
 };
