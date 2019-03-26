@@ -9,33 +9,89 @@ export default class Hangxuat extends Component {
     return (
       <Content>
         <List>
-          <ListItem itemDivider>
-            <View>
-              <Text>Áo thể thao Sima</Text>
-              {/* <View style={styles.viewhang}>
-                <Button>Sửa</Button>
-                <Button>Xóa</Button>
-              </View> */}
+          <ListItem itemDivider style={styles.listdivider}>
+            <Text>Áo thể thao Sima</Text>
+            <View style={{justifyContent:'space-around',flexDirection:'row'}}>
+              <Button ><Text>Sửa</Text></Button>
+              <Button danger>
+                <Text>Xóa</Text>
+              </Button>
             </View>
           </ListItem>
-          <ListItem>
-            <View style={styles.viewhang}>
+          <ListItem style={styles.listitem}>
               <Text>Số Lượng</Text>
               <Text>200</Text>
+          </ListItem>
+          <ListItem style={styles.listitem}>
+            <Text>Đơn Giá</Text>
+            <Text>20.000.000đ</Text>
+          </ListItem>
+          <ListItem style={styles.listitem}>
+            <Text>Thời Gian Xuất</Text>
+            <Text>2019-03-01</Text>
+          </ListItem>
+          <ListItem itemDivider style={styles.listdivider}>
+            <Text>Áo thể thao Sima</Text>
+            <View style={{justifyContent:'space-around',flexDirection:'row'}}>
+              <Button ><Text>Sửa</Text></Button>
+              <Button danger>
+                <Text>Xóa</Text>
+              </Button>
             </View>
           </ListItem>
-          <ListItem>
-            <View style={styles.viewhang}>qqsa
-              <Text>Đơn Giá</Text>
-              <Text>20.000.000đ</Text>
+          <ListItem style={styles.listitem}>
+              <Text>Số Lượng</Text>
+              <Text>200</Text>
+          </ListItem>
+          <ListItem style={styles.listitem}>
+            <Text>Đơn Giá</Text>
+            <Text>20.000.000đ</Text>
+          </ListItem>
+          <ListItem style={styles.listitem}>
+            <Text>Thời Gian Xuất</Text>
+            <Text>2019-03-01</Text>
+          </ListItem>
+          <ListItem itemDivider style={styles.listdivider}>
+            <Text>Style Da Việt</Text>
+            <View style={{justifyContent:'space-around',flexDirection:'row'}}>
+              <Button ><Text>Sửa</Text></Button>
+              <Button danger>
+                <Text>Xóa</Text>
+              </Button>
             </View>
           </ListItem>
-          <ListItem>
-            <View style={styles.viewhang}>
-              <Text>Thời Gian Xuất</Text>
-              <Text>2019-03-01</Text>
+          <ListItem style={styles.listitem}>
+              <Text>Số Lượng</Text>
+              <Text>200</Text>
+          </ListItem>
+          <ListItem style={styles.listitem}>
+            <Text>Đơn Giá</Text>
+            <Text>20.000.000đ</Text>
+          </ListItem>
+          <ListItem style={styles.listitem}>
+            <Text>Thời Gian Xuất</Text>
+            <Text>2019-03-01</Text>
+          </ListItem>
+          <ListItem itemDivider style={styles.listdivider}>
+            <Text>Áo thể thao SP12</Text>
+            <View style={{justifyContent:'space-around',flexDirection:'row'}}>
+              <Button ><Text>Sửa</Text></Button>
+              <Button danger>
+                <Text>Xóa</Text>
+              </Button>
             </View>
-
+          </ListItem>
+          <ListItem style={styles.listitem}>
+              <Text>Số Lượng</Text>
+              <Text>200</Text>
+          </ListItem>
+          <ListItem style={styles.listitem}>
+            <Text>Đơn Giá</Text>
+            <Text>20.000.000đ</Text>
+          </ListItem>
+          <ListItem style={styles.listitem}>
+            <Text>Thời Gian Xuất</Text>
+            <Text>2019-03-01</Text>
           </ListItem>
         </List>
       </Content>

@@ -52,8 +52,19 @@ export default {
     marginLeft:10,
     fontSize:20,
   },
-  viewhang:{
+  listdivider:{
+    flex:1,
+    flexDirection: 'row', 
+    alignItems: 'center', 
+    justifyContent: 'space-between',
+  },
+  listitem:{
+    flex:1,
+    justifyContent:'space-between',
     flexDirection:'row',
-    justifyContent:'space-between'
+  },
+  textlist:{
+    fontSize:20,
+    color:'grey'
   }
 };
