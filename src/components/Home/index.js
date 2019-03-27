@@ -9,8 +9,12 @@ import Hangnhap from './Hangnhap'
 import Danhmuc from './Danhmuc'
 import Sanpham from './Sanpham'
 import Tonkho from './Tonkho'
+//////////////////////////////////////////////////// ///////////
+//                          Header                          //
+/////////////////////////////////////////////////////////////
+import HSanpham from './Header/HSanpham'
 import {
-  Header, Left, Container, Button, Body, Item, List, ListItem, Right, Icon, Text, Content, Input, View, Footer, FooterTab, Badge
+  Header, Left, Container, Button,Segment, Body, Item, List, ListItem, Right, Icon, Text, Content, Input, View, Footer, FooterTab, Badge
 } from "native-base";
 import { StatusBar, ScrollView, } from "react-native";
 import styles from "./styles";
@@ -18,7 +22,7 @@ export default class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      kt: 1
+      kt: 1,
     }
   }
   render() {
@@ -43,7 +47,7 @@ export default class Home extends Component {
               </Right>
             </View>
           </Header>
-          : null
+          : <HSanpham/>
         }
         {/* {kt === 1 ?
           <Bangthongke />
@@ -57,7 +61,7 @@ export default class Home extends Component {
           <Hanghoa />
           : null
         } */}
-        <Danhmuc/>
+        <Sanpham/>
         <Footer style={{ borderTopWidth: 0.5, borderBottomColor: 'gray' }}>
           <FooterTab style={{ backgroundColor: 'white' }}>
 
