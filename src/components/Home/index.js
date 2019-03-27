@@ -5,6 +5,11 @@ import Hangxuat from './Hangxuat'
 import Nguoidung from './Nguoidung'
 import Hanggiaonv from './Hanggiaonv'
 import Luongnv  from './Luongnv';
+import Chitiet from './Chitiet/Cthanggiaonv';
+import SPMoi from './SPMoi'
+import SPBanChay from './SPBanChay';
+import NhanVienMoi from './NhanVienMoi'
+import NVThuNhapCao from './NVThuNhapCao'
 import {
   Header, Left, Container, Button, Body, Item, List, ListItem, Right, Icon, Text, Content, Input, View, Footer, FooterTab, Badge
 } from "native-base";
@@ -53,7 +58,7 @@ export default class Home extends Component {
           <Hanghoa />
           : null
         } */}
-        <Luongnv/>
+        <NVThuNhapCao/>
         <Footer style={{ borderTopWidth: 0.5, borderBottomColor: 'gray' }}>
           <FooterTab style={{ backgroundColor: 'white' }}>
 
