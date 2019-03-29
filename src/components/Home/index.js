@@ -4,17 +4,20 @@ import Hanghoa from './Hanghoa'
 import Hangxuat from './Hangxuat'
 import Nguoidung from './Nguoidung'
 import Hanggiaonv from './Hanggiaonv'
-import Luongnv  from './Luongnv';
+import Luongnv from './Luongnv';
 import Hangnhap from './Hangnhap'
 import Danhmuc from './Danhmuc'
 import Sanpham from './Sanpham'
 import Tonkho from './Tonkho'
-//////////////////////////////////////////////////// ///////////
-//                          Header                          //
-/////////////////////////////////////////////////////////////
+
 import HSanpham from './Header/HSanpham'
+import Chitiet from './Chitiet/Cthanggiaonv';
+import SPMoi from './SPMoi'
+import SPBanChay from './SPBanChay';
+import NhanVienMoi from './NhanVienMoi'
+import NVThuNhapCao from './NVThuNhapCao'
 import {
-  Header, Left, Container, Button,Segment, Body, Item, List, ListItem, Right, Icon, Text, Content, Input, View, Footer, FooterTab, Badge
+  Header, Left, Container, Button, Segment, Body, Item, List, ListItem, Right, Icon, Text, Content, Input, View, Footer, FooterTab, Badge
 } from "native-base";
 import { StatusBar, ScrollView, } from "react-native";
 import styles from "./styles";
@@ -31,7 +34,7 @@ export default class Home extends Component {
       <Container style={styles.container}>
         {StatusBar.setBackgroundColor('#0288D1', true)}
         {kt !== 1 ?
-          <Header searchBar rounded style={{ backgroundColor: '#0288D1'}} >
+          <Header searchBar rounded style={{ backgroundColor: '#0288D1' }} >
             <View style={{ flex: 1, justifyContent: 'center', flexDirection: 'row', alignItems: 'center' }}>
               <Left style={{ flex: 1 }}>
                 <Icon name="person" style={{ color: 'white' }} />
@@ -47,7 +50,10 @@ export default class Home extends Component {
               </Right>
             </View>
           </Header>
-          : <HSanpham/>
+          :
+          <Header style={{ justifyContent: 'center', alignItems: 'center', backgroundColor: '#0288D1', borderBottomWidth: .5 }}>
+            <Text style={{ fontSize: 40, color: 'white' }}>Trang chủ</Text>
+          </Header>
         }
         {/* {kt === 1 ?
           <Bangthongke />
@@ -61,7 +67,7 @@ export default class Home extends Component {
           <Hanghoa />
           : null
         } */}
-        <Sanpham/>
+        <Bangthongke />
         <Footer style={{ borderTopWidth: 0.5, borderBottomColor: 'gray' }}>
           <FooterTab style={{ backgroundColor: 'white' }}>
 

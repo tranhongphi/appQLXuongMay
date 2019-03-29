@@ -8,6 +8,7 @@ export default class HSanpham extends Component {
         }
     }
     render() {
+        const {segment} = this.state
         return (
             <Header hasSegment style={{backgroundColor:'#0288D1'}}>
                 <Left>

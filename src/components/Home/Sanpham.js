@@ -1,11 +1,11 @@
-import React, { Component ,props} from 'react';
-import { Container, Header, Content, List, ListItem, Thumbnail, Text, Body, Button, Icon, Segment, Left, Right, Item } from 'native-base';
-import { Image } from 'react-native'
+import React, { Component} from 'react';
+import { Container, Header, Content, List, ListItem, Thumbnail, Text, Body, Button, Icon, Segment, Left, Right, Item} from 'native-base';
+import { Image,Modal } from 'react-native'
 import HSanpham from './Header/HSanpham'
 export default class Sanpham extends Component {
     render() {
         return (
-            <DSsanpham/>
+            <Topsanpham/>
         );
     }
 }
