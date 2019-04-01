@@ -10,41 +10,37 @@ const { width } = Dimensions.get('window');
 const photos = [
   <View style={styles.viewscroll}>
     <View style={{ justifyContent: 'center', alignItems: 'center', }}>
-      <Text style={{ fontWeight: 'bold', fontSize: 30, color: 'white' }}>Tổng thu</Text>
-      <Text style={{ fontWeight: 'bold', fontSize: 30, color: 'white' }}>1000đ</Text>
+      <Text style={{ fontWeight: 'bold', fontSize: 20, color: 'white' }}>Tổng thu</Text>
+      <Text style={{ fontWeight: 'bold', fontSize: 50, color: 'white' }}>1000đ</Text>
     </View>
     <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-      <Text style={{ color: 'white' }}>Tháng 1 + Tháng 2</Text>
       <Progress.Circle color={'white'} size={100} progress={.5} indeterminate={false} showsText={true} formatText={this.pro} thickness={10} />
     </View>
   </View>,
   <View style={styles.viewscroll}>
     <View style={{ justifyContent: 'center', alignItems: 'center', }}>
-      <Text style={{ fontWeight: 'bold', fontSize: 30, color: 'white' }}>Tổng thu</Text>
-      <Text style={{ fontWeight: 'bold', fontSize: 30, color: 'white' }}>1000đ</Text>
+      <Text style={{ fontWeight: 'bold', fontSize: 20, color: 'white' }}>Tổng thu</Text>
+      <Text style={{ fontWeight: 'bold', fontSize: 50, color: 'white'}}>1000đ</Text>
     </View>
     <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-      <Text style={{ color: 'white' }}>Tháng 1 + Tháng 2</Text>
       <Progress.Circle color={'white'} size={100} progress={.5} indeterminate={false} showsText={true} formatText={this.pro} thickness={10} />
     </View>
   </View>,
   <View style={styles.viewscroll}>
     <View style={{ justifyContent: 'center', alignItems: 'center', }}>
-      <Text style={{ fontWeight: 'bold', fontSize: 30, color: 'white' }}>Tổng thu</Text>
-      <Text style={{ fontWeight: 'bold', fontSize: 30, color: 'white' }}>1000đ</Text>
+      <Text style={{ fontWeight: 'bold', fontSize: 20, color: 'white' }}>Tổng thu</Text>
+      <Text style={{ fontWeight: 'bold', fontSize: 50, color: 'white' }}>1000đ</Text>
     </View>
     <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-      <Text style={{ color: 'white' }}>Tháng 1 + Tháng 2</Text>
       <Progress.Circle color={'white'} size={100} progress={.5} indeterminate={false} showsText={true} formatText={this.pro} thickness={10} />
     </View>
   </View>,
   <View style={styles.viewscroll}>
     <View style={{ justifyContent: 'center', alignItems: 'center', }}>
-      <Text style={{ fontWeight: 'bold', fontSize: 30, color: 'white' }}>Tổng thu</Text>
-      <Text style={{ fontWeight: 'bold', fontSize: 30, color: 'white' }}>1000đ</Text>
+      <Text style={{ fontWeight: 'bold', fontSize: 20, color: 'white' }}>Tổng thu</Text>
+      <Text style={{ fontWeight: 'bold', fontSize: 50, color: 'white' }}>1000đ</Text>
     </View>
     <View style={{ justifyContent: 'center', alignItems: 'center' }}>
-      <Text style={{ color: 'white' }}>Tháng 1 + Tháng 2</Text>
       <Progress.Circle color={'white'} size={100} progress={.5} indeterminate={false} showsText={true} formatText={this.pro} thickness={10} />
     </View>
   </View>,

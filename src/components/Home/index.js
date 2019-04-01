@@ -40,10 +40,7 @@ export default class Home extends Component {
                 <Icon name="person" style={{ color: 'white' }} />
               </Left>
               <Body style={{ flex: 7 }}>
-                <Item style={{ width: '100%', height: 35, backgroundColor: 'white', borderRadius: 30, justifyContent: 'center', alignItems: 'center' }}>
-                  <Icon name="search" style={{ padding: 10, opacity: .3 }} />
-                  <Input placeholder="Search" placeholderTextColor='gray' />
-                </Item>
+                <Text style={{fontSize:25,color:'white'}}>Hàng Hóa</Text>
               </Body>
               <Right style={{ flex: 1 }}>
                 <Icon name="notifications" style={{ color: 'white' }} />
@@ -52,7 +49,7 @@ export default class Home extends Component {
           </Header>
           :
           <Header style={{ justifyContent: 'center', alignItems: 'center', backgroundColor: '#0288D1', borderBottomWidth: .5 }}>
-            <Text style={{ fontSize: 40, color: 'white' }}>Trang chủ</Text>
+            <Text style={{fontSize:25,  color: 'white' }}>Trang chủ</Text>
           </Header>
         }
         {/* {kt === 1 ?
@@ -67,7 +64,7 @@ export default class Home extends Component {
           <Hanghoa />
           : null
         } */}
-        <Bangthongke />
+        <Danhmuc/>
         <Footer style={{ borderTopWidth: 0.5, borderBottomColor: 'gray' }}>
           <FooterTab style={{ backgroundColor: 'white' }}>
 

@@ -36,7 +36,7 @@ export default {
     alignItems:'center'
   },
   textcon: {
-    fontSize: 25,
+    fontSize: 20,
     padding: 25,
     color:'grey'
   },
@@ -45,7 +45,8 @@ export default {
   },
   badge:{
     color:'grey',
-    padding:25
+    padding:25,
+    fontSize:25
   },
   textlisthh:{
     color:'grey',

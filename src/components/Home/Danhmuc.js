@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, List, ListItem, Thumbnail, Text, Left, Body, Right, Button, Icon } from 'native-base';
-import { Image } from 'react-native'
+import { Image, TouchableOpacity } from 'react-native'
 export default class Hanggiaonv extends Component {
     render() {
         return (
@@ -17,8 +17,9 @@ export default class Hanggiaonv extends Component {
                             <Text note numberOfLines={2}>Mô tả: aaaaaaaaaaaaa</Text>
                         </Body>
                         <Right style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                            <Button style={{ width: 40, justifyContent: 'center', marginRight: 10,backgroundColor:'#0288D1' }}><Image source={require('../../../images/edit.png')} /></Button>
-                            <Button danger style={{ width: 40, justifyContent: 'center' }}><Image source={require('../../../images/erase.png')} /></Button>
+                            <TouchableOpacity>
+                                <Icon type="FontAwesome" name="ellipsis-v" />
+                            </TouchableOpacity>
                         </Right>
                     </ListItem>
                     <ListItem thumbnail>
@@ -31,8 +32,9 @@ export default class Hanggiaonv extends Component {
                             <Text note numberOfLines={2}>Mô tả: aaaaaaaaaaaaa</Text>
                         </Body>
                         <Right style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                            <Button style={{ width: 40, justifyContent: 'center', marginRight: 10,backgroundColor:'#0288D1' }}><Image source={require('../../../images/edit.png')} /></Button>
-                            <Button danger style={{ width: 40, justifyContent: 'center' }}><Image source={require('../../../images/erase.png')} /></Button>
+                            <TouchableOpacity>
+                                <Icon type="FontAwesome" name="ellipsis-v" />
+                            </TouchableOpacity>
                         </Right>
                     </ListItem>
                     <ListItem thumbnail>
@@ -45,8 +47,9 @@ export default class Hanggiaonv extends Component {
                             <Text note numberOfLines={2}>Mô tả: aaaaaaaaaaaaa</Text>
                         </Body>
                         <Right style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                            <Button style={{ width: 40, justifyContent: 'center', marginRight: 10,backgroundColor:'#0288D1' }}><Image source={require('../../../images/edit.png')} /></Button>
-                            <Button danger style={{ width: 40, justifyContent: 'center' }}><Image source={require('../../../images/erase.png')} /></Button>
+                            <TouchableOpacity>
+                                <Icon type="FontAwesome" name="ellipsis-v" />
+                            </TouchableOpacity>
                         </Right>
                     </ListItem>
                     <ListItem thumbnail>
@@ -59,8 +62,9 @@ export default class Hanggiaonv extends Component {
                             <Text note numberOfLines={2}>Mô tả: aaaaaaaaaaaaa</Text>
                         </Body>
                         <Right style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                            <Button style={{ width: 40, justifyContent: 'center', marginRight: 10,backgroundColor:'#0288D1' }}><Image source={require('../../../images/edit.png')} /></Button>
-                            <Button danger style={{ width: 40, justifyContent: 'center' }}><Image source={require('../../../images/erase.png')} /></Button>
+                            <TouchableOpacity>
+                                <Icon type="FontAwesome" name="ellipsis-v" />
+                            </TouchableOpacity>
                         </Right>
                     </ListItem>
                     <ListItem thumbnail>
@@ -73,8 +77,9 @@ export default class Hanggiaonv extends Component {
                             <Text note numberOfLines={2}>Mô tả: aaaaaaaaaaaaa</Text>
                         </Body>
                         <Right style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                            <Button style={{ width: 40, justifyContent: 'center', marginRight: 10,backgroundColor:'#0288D1' }}><Image source={require('../../../images/edit.png')} /></Button>
-                            <Button danger style={{ width: 40, justifyContent: 'center' }}><Image source={require('../../../images/erase.png')} /></Button>
+                            <TouchableOpacity>
+                                <Icon type="FontAwesome" name="ellipsis-v" />
+                            </TouchableOpacity>
                         </Right>
                     </ListItem>
                 </List>

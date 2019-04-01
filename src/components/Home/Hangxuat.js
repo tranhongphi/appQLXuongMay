@@ -12,10 +12,6 @@ export default class Hangxuat extends Component {
           <ListItem itemDivider style={styles.listdivider}>
             <Text>Áo thể thao Sima</Text>
             <View style={{justifyContent:'space-around',flexDirection:'row'}}>
-              <Button ><Text>Sửa</Text></Button>
-              <Button danger>
-                <Text>Xóa</Text>
-              </Button>
             </View>
           </ListItem>
           <ListItem style={styles.listitem}>
