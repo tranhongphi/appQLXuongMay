@@ -30,69 +30,6 @@ export default class Hangxuat extends Component {
             <Text>Thời Gian Xuất</Text>
             <Text>2019-03-01</Text>
           </ListItem>
-          <ListItem itemDivider style={styles.listdivider}>
-            <Text>Áo thể thao Sima</Text>
-            <View style={{justifyContent:'space-around',flexDirection:'row'}}>
-              <Button ><Text>Sửa</Text></Button>
-              <Button danger>
-                <Text>Xóa</Text>
-              </Button>
-            </View>
-          </ListItem>
-          <ListItem style={styles.listitem}>
-              <Text>Số Lượng</Text>
-              <Text>200</Text>
-          </ListItem>
-          <ListItem style={styles.listitem}>
-            <Text>Đơn Giá</Text>
-            <Text>20.000.000đ</Text>
-          </ListItem>
-          <ListItem style={styles.listitem}>
-            <Text>Thời Gian Xuất</Text>
-            <Text>2019-03-01</Text>
-          </ListItem>
-          <ListItem itemDivider style={styles.listdivider}>
-            <Text>Style Da Việt</Text>
-            <View style={{justifyContent:'space-around',flexDirection:'row'}}>
-              <Button ><Text>Sửa</Text></Button>
-              <Button danger>
-                <Text>Xóa</Text>
-              </Button>
-            </View>
-          </ListItem>
-          <ListItem style={styles.listitem}>
-              <Text>Số Lượng</Text>
-              <Text>200</Text>
-          </ListItem>
-          <ListItem style={styles.listitem}>
-            <Text>Đơn Giá</Text>
-            <Text>20.000.000đ</Text>
-          </ListItem>
-          <ListItem style={styles.listitem}>
-            <Text>Thời Gian Xuất</Text>
-            <Text>2019-03-01</Text>
-          </ListItem>
-          <ListItem itemDivider style={styles.listdivider}>
-            <Text>Áo thể thao SP12</Text>
-            <View style={{justifyContent:'space-around',flexDirection:'row'}}>
-              <Button ><Text>Sửa</Text></Button>
-              <Button danger>
-                <Text>Xóa</Text>
-              </Button>
-            </View>
-          </ListItem>
-          <ListItem style={styles.listitem}>
-              <Text>Số Lượng</Text>
-              <Text>200</Text>
-          </ListItem>
-          <ListItem style={styles.listitem}>
-            <Text>Đơn Giá</Text>
-            <Text>20.000.000đ</Text>
-          </ListItem>
-          <ListItem style={styles.listitem}>
-            <Text>Thời Gian Xuất</Text>
-            <Text>2019-03-01</Text>
-          </ListItem>
         </List>
       </Content>
     );

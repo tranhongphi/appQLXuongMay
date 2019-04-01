@@ -2,7 +2,8 @@ import { Dimensions } from 'react-native'
 export default {
   container: {
     flex: 1,
-    backgroundColor: "#fff"
+    backgroundColor: "#fff",
+
   },
   headerLeft: {
     flex: 0.3
@@ -66,5 +67,14 @@ export default {
   textlist:{
     fontSize:20,
     color:'grey'
+  },
+  ItemList : {
+    flexDirection:'row', 
+    justifyContent:'space-between',
+    alignItems: 'center' , 
+    borderBottomWidth: 0.5, 
+    height:75,
+    paddingLeft: 15,
+    paddingRight: 15,
   }
 };
