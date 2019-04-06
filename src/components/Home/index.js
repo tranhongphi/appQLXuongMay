@@ -28,10 +28,12 @@ import {hanghoa} from '../../actions'
 import {nguoidung} from '../../actions'
 
 import { connect } from "react-redux";
+import { createHook } from "async_hooks";
 class Home extends Component {
   constructor() {
     super();
-    this.state = {}
+    this.state = {
+    }
   }
   render() {
     return (
@@ -57,7 +59,19 @@ class Home extends Component {
             <Text style={{fontSize:25,  color: 'white' }}>Trang chủ</Text>
           </Header>
           :
-          null
+          <Header searchBar rounded style={{ backgroundColor: '#0288D1' }} >
+            <View style={{ flex: 1, justifyContent: 'center', flexDirection: 'row', alignItems: 'center' }}>
+              <Left style={{ flex: 1 }}>
+                <Icon name="person" style={{ color: 'white' }} />
+              </Left>
+              <Body style={{ flex: 7 }}>
+                <Text style={{fontSize:25,color:'white'}}>Người Dùng</Text>
+              </Body>
+              <Right style={{ flex: 1 }}>
+                <Icon name="notifications" style={{ color: 'white' }} />
+              </Right>
+            </View>
+          </Header>
         }
         <Footer style={{ borderTopWidth: 0.5, borderBottomColor: 'gray' }}>
           <FooterTab style={{ backgroundColor: 'white' }}>
