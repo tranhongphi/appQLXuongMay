@@ -46,4 +46,3 @@ if (window.__FETCH_SUPPORT__) { // it's RNDebugger only to have
     global.originalFileReader :
     global.FileReader;
 }
-

@@ -37,7 +37,21 @@ export const userLoginFail = ({ email, password }) => ({
     }
   }
 });
-
+export const bangthongke=()=>({
+  type:
+    ACTION_TYPES.Bangthongke,
+  payload:{}
+})
+export const hanghoa=()=>({
+  type:
+    ACTION_TYPES.Hanghoa,
+  payload:{}
+})
+export const nguoidung=()=>({
+  type:
+    ACTION_TYPES.Nguoidung,
+  payload:{}
+})
 export function userRequestLogout() {
   return {
     type: ACTION_TYPES.USER_LOGOUT_REQUESTED,

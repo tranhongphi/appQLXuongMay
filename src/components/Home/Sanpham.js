@@ -23,10 +23,6 @@ class DSsanpham extends Component{
                             <Text note numberOfLines={1}>Giá: 200.000đ</Text>
                             <Text note numberOfLines={2}>Tổng sô: 600</Text>
                         </Body>
-                        <Right style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                            <Button style={{ width: 40, justifyContent: 'center', marginRight: 10, backgroundColor: '#0288D1' }}><Image source={require('../../../images/edit.png')} /></Button>
-                            <Button danger style={{ width: 40, justifyContent: 'center' }}><Image source={require('../../../images/erase.png')} /></Button>
-                        </Right>
                     </ListItem>
                     <ListItem thumbnail>
                         <Left>
@@ -37,10 +33,6 @@ class DSsanpham extends Component{
                             <Text note numberOfLines={1}>Giá: 200.000đ</Text>
                             <Text note numberOfLines={2}>Tổng sô: 600</Text>
                         </Body>
-                        <Right style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                            <Button style={{ width: 40, justifyContent: 'center', marginRight: 10, backgroundColor: '#0288D1' }}><Image source={require('../../../images/edit.png')} /></Button>
-                            <Button danger style={{ width: 40, justifyContent: 'center' }}><Image source={require('../../../images/erase.png')} /></Button>
-                        </Right>
                     </ListItem>
                     <ListItem thumbnail>
                         <Left>
@@ -51,10 +43,6 @@ class DSsanpham extends Component{
                             <Text note numberOfLines={1}>Giá: 200.000đ</Text>
                             <Text note numberOfLines={2}>Tổng sô: 600</Text>
                         </Body>
-                        <Right style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                            <Button style={{ width: 40, justifyContent: 'center', marginRight: 10, backgroundColor: '#0288D1' }}><Image source={require('../../../images/edit.png')} /></Button>
-                            <Button danger style={{ width: 40, justifyContent: 'center' }}><Image source={require('../../../images/erase.png')} /></Button>
-                        </Right>
                     </ListItem>
                     <ListItem thumbnail>
                         <Left>
@@ -65,10 +53,6 @@ class DSsanpham extends Component{
                             <Text note numberOfLines={1}>Giá: 200.000đ</Text>
                             <Text note numberOfLines={2}>Tổng sô: 600</Text>
                         </Body>
-                        <Right style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                            <Button style={{ width: 40, justifyContent: 'center', marginRight: 10, backgroundColor: '#0288D1' }}><Image source={require('../../../images/edit.png')} /></Button>
-                            <Button danger style={{ width: 40, justifyContent: 'center' }}><Image source={require('../../../images/erase.png')} /></Button>
-                        </Right>
                     </ListItem>
                 </List>
             </Content>

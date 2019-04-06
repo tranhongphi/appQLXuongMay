@@ -44,8 +44,7 @@ export default class Cthanggiaonv extends Component {
                         <Text>S</Text>
                     </ListItem>
                     <ListItem itemDivider style={[styles.listitem,{height:500}]}>
-                        <Button style={{flex:1,marginRight:10,justifyContent:'center'}}><Text>Sửa</Text></Button>
-                        <Button style={{flex:1,justifyContent:'center'}} danger><Text>Xóa</Text></Button>
+                        <Button style={{width:400,justifyContent:'center'}}><Text>Cập nhật</Text></Button>
                     </ListItem>
                 </List>
             </Content>

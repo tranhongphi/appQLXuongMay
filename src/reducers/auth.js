@@ -4,7 +4,8 @@ const initialState = {
   token: undefined,
   isAuthenticating: false,
   error: undefined,
-  isFailed: false
+  isFailed: false,
+  kt: 1
 };
 
 export default (state = initialState, action) => {
@@ -34,6 +35,18 @@ export default (state = initialState, action) => {
     case ACTION_TYPES.USER_LOGOUT_REQUESTED:
       return {
         ...initialState
+      };
+    case ACTION_TYPES.Bangthongke:
+      return {
+        kt: 1
+      };
+    case ACTION_TYPES.Hanghoa:
+      return {
+        kt: 2
+      };
+    case ACTION_TYPES.Nguoidung:
+      return {
+        kt: 0
       };
     default:
       return state;

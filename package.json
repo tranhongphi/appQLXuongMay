@@ -1,6 +1,5 @@
 {
   "name": "ReactNativeStarter",
-  "version": "2.7.2.57",
   "private": true,
   "devDependencies": {
     "@babel/plugin-external-helpers": "7.0.0",

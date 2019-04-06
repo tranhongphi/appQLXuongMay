@@ -9,7 +9,7 @@ import Hangnhap from './Hangnhap'
 import Danhmuc from './Danhmuc'
 import Sanpham from './Sanpham'
 import Tonkho from './Tonkho'
-
+import HeThong from './HeThong'
 import HSanpham from './Header/HSanpham'
 import Chitiet from './Chitiet/Cthanggiaonv';
 import SPMoi from './SPMoi'
@@ -21,19 +21,23 @@ import {
 } from "native-base";
 import { StatusBar, ScrollView, } from "react-native";
 import styles from "./styles";
-export default class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      kt: 1,
-    }
+import Cthanggiaonv from "./Chitiet/Cthanggiaonv";
+
+import {bangthongke} from '../../actions'
+import {hanghoa} from '../../actions'
+import {nguoidung} from '../../actions'
+
+import { connect } from "react-redux";
+class Home extends Component {
+  constructor() {
+    super();
+    this.state = {}
   }
   render() {
-    const { kt } = this.state;
     return (
       <Container style={styles.container}>
         {StatusBar.setBackgroundColor('#0288D1', true)}
-        {kt !== 1 ?
+        {this.props.auth.kt === 2 ?
           <Header searchBar rounded style={{ backgroundColor: '#0288D1' }} >
             <View style={{ flex: 1, justifyContent: 'center', flexDirection: 'row', alignItems: 'center' }}>
               <Left style={{ flex: 1 }}>
@@ -48,37 +52,27 @@ export default class Home extends Component {
             </View>
           </Header>
           :
+          this.props.auth.kt===1?
           <Header style={{ justifyContent: 'center', alignItems: 'center', backgroundColor: '#0288D1', borderBottomWidth: .5 }}>
             <Text style={{fontSize:25,  color: 'white' }}>Trang chủ</Text>
           </Header>
+          :
+          null
         }
-        {/* {kt === 1 ?
-          <Bangthongke />
-          : null
-        }
-        {kt === 2 ?
-          <Nguoidung />
-          : null
-        }
-        {kt === 3 ?
-          <Hanghoa />
-          : null
-        } */}
-        <Danhmuc/>
         <Footer style={{ borderTopWidth: 0.5, borderBottomColor: 'gray' }}>
           <FooterTab style={{ backgroundColor: 'white' }}>
 
-            <Button vertical style={[this.state.kt === 2 ? { color: '#0288D1', backgroundColor: 'white' } : { color: 'gray' }]} onPress={() => { this.setState({ kt: 2 }) }} active={this.state.kt !== 2 ? false : true}>
-              <Icon name="settings" style={[styles.textfoot, this.state.kt === 2 ? { color: '#0288D1' } : { color: 'gray' }]} />
-              <Text style={[styles.textfoot, this.state.kt === 2 ? { color: '#0288D1' } : { color: 'gray' }]} >Hệ thống</Text>
+            <Button vertical style={[this.props.auth.kt === 1 ? { color: '#0288D1', backgroundColor: 'white' } : { color: 'gray' }]} onPress={() => { this.props.nguoidung() }} active={this.props.auth.kt !== 1 ? false : true}>
+              <Icon name="settings" style={[styles.textfoot, this.props.auth.kt === 1 ? { color: '#0288D1' } : { color: 'gray' }]} />
+              <Text style={[styles.textfoot, this.props.auth.kt === 1? { color: '#0288D1' } : { color: 'gray' }]} >Hệ thống</Text>
             </Button>
-            <Button vertical style={[this.state.kt === 1 ? { color: '#0288D1', backgroundColor: 'white' } : { color: 'gray' }]} onPress={() => { this.setState({ kt: 1 }) }} active={this.state.kt !== 1 ? false : true}>
-              <Icon active name="apps" style={[styles.textfoot, this.state.kt === 1 ? { color: '#0288D1' } : { color: 'gray' }]} />
-              <Text style={[styles.textfoot, this.state.kt === 1 ? { color: '#0288D1' } : { color: 'gray' }]} >Trang chủ</Text>
+            <Button vertical style={[this.props.auth.kt === 0 ? { color: '#0288D1', backgroundColor: 'white' } : { color: 'gray' }]} onPress={() => { this.props.bangthongke() }} active={this.props.auth.kt !== 0 ? false : true}>
+              <Icon active name="apps" style={[styles.textfoot, this.props.auth.kt === 0 ? { color: '#0288D1' } : { color: 'gray' }]} />
+              <Text style={[styles.textfoot, this.props.auth.kt === 0 ? { color: '#0288D1' } : { color: 'gray' }]} >Trang chủ</Text>
             </Button>
-            <Button vertical style={[this.state.kt === 3 ? { color: '#0288D1', backgroundColor: 'white' } : { color: 'gray' }]} onPress={() => { this.setState({ kt: 3 }) }} active={this.state.kt !== 3 ? false : true}>
-              <Icon name="navigate" style={[styles.textfoot, this.state.kt === 3 ? { color: '#0288D1' } : { color: 'gray' }]} />
-              <Text style={[styles.textfoot, this.state.kt === 3 ? { color: '#0288D1' } : { color: 'gray' }]}>Hàng hóa</Text>
+            <Button vertical style={[this.props.auth.kt === 2 ? { color: '#0288D1', backgroundColor: 'white' } : { color: 'gray' }]} onPress={() => { this.props.hanghoa() }} active={this.props.auth.kt !== 2 ? false : true}>
+              <Icon name="navigate" style={[styles.textfoot, this.props.auth.kt === 2 ? { color: '#0288D1' } : { color: 'gray' }]} />
+              <Text style={[styles.textfoot, this.props.auth.kt === 2 ? { color: '#0288D1' } : { color: 'gray' }]}>Hàng hóa</Text>
             </Button>
           </FooterTab>
         </Footer>
@@ -86,3 +80,15 @@ export default class Home extends Component {
     );
   }
 }
+const mapStateToProps = state => ({
+  auth: state.auth,
+});
+const mapDispatchToProps = dispatch => ({
+  bangthongke:() => dispatch(bangthongke()),
+  hanghoa:()=>dispatch(hanghoa()),
+  nguoidung:()=>dispatch(nguoidung()),
+});
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Home);
