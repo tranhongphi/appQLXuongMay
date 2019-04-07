@@ -8,6 +8,7 @@ import Login from "../../components/Login";
 import { userLoginSuccess, userLoginFail } from "../../actions";
 import { emailFormat, required, alphaNumeric } from "./validators";
 import styles from  "./styles";
+import Home from "../../components/Home";
 
 const lockIcon = require("../../../assets/icon/lock.png");
 const mailIcon = require("../../../assets/icon/mail.png");
@@ -139,4 +140,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(LoginContainer);
+)(Home);

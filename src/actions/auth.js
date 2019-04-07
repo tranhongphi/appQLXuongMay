@@ -47,9 +47,9 @@ export const hanghoa=()=>({
     ACTION_TYPES.Hanghoa,
   payload:{}
 })
-export const nguoidung=()=>({
+export const hethong=()=>({
   type:
-    ACTION_TYPES.Nguoidung,
+    ACTION_TYPES.Hethong,
   payload:{}
 })
 export function userRequestLogout() {

@@ -5,7 +5,7 @@ const initialState = {
   isAuthenticating: false,
   error: undefined,
   isFailed: false,
-  kt: 1
+  kt:1
 };
 
 export default (state = initialState, action) => {
@@ -37,17 +37,17 @@ export default (state = initialState, action) => {
         ...initialState
       };
     case ACTION_TYPES.Bangthongke:
-      return {
-        kt: 1
-      };
+    return {
+      kt:1
+    };
     case ACTION_TYPES.Hanghoa:
-      return {
-        kt: 2
-      };
-    case ACTION_TYPES.Nguoidung:
-      return {
-        kt: 0
-      };
+    return {
+      kt:2
+    };
+    case ACTION_TYPES.Hethong:
+    return {
+      kt:0
+    };
     default:
       return state;
   }

@@ -18,7 +18,7 @@ export const CLOSE_DRAWER = "CLOSE_DRAWER";
 
 export const Bangthongke="Bangthongke";
 export const Hanghoa="Hanghoa";
-export const  Nguoidung="Nguoidung";
+export const  Hethong="Hethong";
 
 export const USER_LOGIN_REQUESTED = "USER_LOGIN_REQUESTED";
 export const USER_LOGIN_SUCCESS = "USER_LOGIN_SUCCESS";
